@@ -14,18 +14,23 @@ The following steps have been followed for making an example
         Limitations : While the use of Bad words seem to indicate toxicity, language without such words can still be toxic.
 
     2. Blocklisting [3](). Block undesirable words , preventing them from being generated. Not necessarly toxic, but undesirable context dependent.
-       Note that Blocklisting technique can come together with others as well 
+       Note that Blocklisting technique can come together with others as well.
+
+    3. Focus: Focus the generation in certain topic or character instead of another. (example : focus in the duck, not in former president?). 
 
 #### Hints about the impact of the class
     
 
   * Two mental models for designing examples
-      1. Toxicity in Context .Design an example in which a certain word in certain context can be considered a bad word. 
+      1. Toxicity in Context .Design an example in which a certain word in certain context can be considered a bad word. Maybe not useful as this is thought for words and not exactly sequences.
       2. Detoxifying Generations. Take examples from research in REALTOXICITYPROMPTS [4](https://aclanthology.org/2020.findings-emnlp.301.pdf) and detoxify them.
+      3. Avoiding certain sequences. For examples, missatributed quotes to historical characters that have been incorrectly missatributed.
+      4. According to docs aboiding repetitive results in [default model configuration](https://huggingface.co/docs/transformers/v4.30.0/generation_strategies#default-text-generation-configuration)
 
 
 #### Class Analysis
   * Class Description. Find [NoBadWordsLogitsProccesor](https://github.com/huggingface/transformers/blob/f1732e1374a082bf8e43bd0e4aa8a2da21a32a21/src/transformers/generation/logits_process.py#L725)
+    Apparently enforces that specified sequences will never be selected. 
     
   * Arguments
     * bad_words_ids . List of list of token ids that are not allowed to be generated.
