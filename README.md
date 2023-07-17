@@ -30,8 +30,8 @@ The following steps have been followed for making an example
   * Arguments
     * bad_words_ids . List of list of token ids that are not allowed to be generated.
     * eos_token_id . The id of the end-of-sequence token. Optionally, use a list to set multiple end-to-endsequence tokens.
-  * History / Evolution . Discussions in [22168](https://github.com/huggingface/transformers/issues/22168)
+  * History / Evolution . Discussions in [#22168](https://github.com/huggingface/transformers/issues/22168)
 
 
 #### References 
- Toxicity in AI generation []
+ Toxicity in AI generation [](https://towardsdatascience.com/toxicity-in-ai-text-generation-9e9d9646e68f)
