@@ -1,3 +1,8 @@
+
+
+![Escanear](https://github.com/SoyGema/contrib_schema/assets/24204714/bc8dd78f-5295-4c08-969b-5ec56abe92d4)
+
+
 ### Contrib_schema
 The following steps have been followed for making an example
  1. Analysis of the possible uses of the class
