@@ -31,7 +31,7 @@ The following steps have been followed for making an example
       2. Detoxifying Generations. Take examples from research in REALTOXICITYPROMPTS [4](https://aclanthology.org/2020.findings-emnlp.301.pdf) and detoxify them.
       3. Avoiding certain sequences. For examples, missatributed quotes to historical characters that have been incorrectly missatributed.
       4. According to docs aboiding repetitive results in [default model configuration](https://huggingface.co/docs/transformers/v4.30.0/generation_strategies#default-text-generation-configuration) NO Because that´s what RepetitionPenaltyLogitsProcessor do.
-      5. See this documentation for knowing more
+      5. Focus the conversation. The duck , not the president inside a generative text generation scenario.
 
 
 #### Class Analysis
