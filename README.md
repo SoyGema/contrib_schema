@@ -1,6 +1,6 @@
+![escanear](Escanear.jpeg)
 
 
-![Escanear](https://github.com/SoyGema/contrib_schema/assets/24204714/bc8dd78f-5295-4c08-969b-5ec56abe92d4)
 
 
 ### Contrib_schema
