@@ -41,3 +41,23 @@ The following steps have been followed for making an example
 
 #### References 
  Toxicity in AI generation [](https://towardsdatascience.com/toxicity-in-ai-text-generation-9e9d9646e68f)
+
+
+
+#### Caveats and observations
+
+Error when changing 
+
+model.generation_config.eos_token_id = 43042
+model.generation_config.bos_token_id = 43042
+model.generation_config
+
+
+´´´
+UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation )
+  warnings.warn(
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+´´´
+https://huggingface.co/docs/transformers/main_classes/text_generation#transformers.GenerationConfig.from_pretrained.example
+This means that for using this parameter we might want to use or own pretrained model
+ 
