@@ -23,3 +23,6 @@ bad_words_ids = get_tokens_as_list(word_list=word_list)
 badwords_ids2 = model.generate(inputs["input_ids"], max_new_tokens=17, bad_words_ids=bad_words_ids, eos_token_id=tokenizer_with_prefix_space.eos_token_id)
 
 print(tokenizer.batch_decode(badwords_ids2, skip_special_tokens=True)[0])
+
+biased_ids = model.generate(inputs["input_ids"], max_new_tokens=4, num_beams=17, bad_words_ids=bad_words_ids)
+print(tokenizer.batch_decode(biased_ids, skip_special_tokens=True)[0])
