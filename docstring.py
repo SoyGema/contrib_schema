@@ -18,10 +18,8 @@ class NoBadWordsLogitsProcessor(SequenceBiasLogitsProcessor):
         bad_words_ids (`List[List[int]]`):
             List of list of token ids that are not allowed to be generated.
         eos_token_id (`Union[int, List[int]]`):
-            The id of the *end-of-sequence* token. Optionally, use a list to set multiple *end-of-sequence* tokens.
-            Note : changing eos_token_id via `model.generation_config.eos_token_id = 42042` is a deprecated strategy.
-            Use a generation configuration file from a pretrained model for dealing with this Arg. See
-            https://huggingface.co/docs/transformers/main_classes/text_generation#transformers.GenerationConfig.from_pretrained.example 
+            The id of the *end-of-sequence* token. Optionally, use a list to set multiple *end-of-sequence* tokens
+            that comes from the instantiated generation configuration file
 
     Examples:
 
